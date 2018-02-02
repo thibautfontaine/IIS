@@ -5,7 +5,7 @@
   tasks:
     - name: Install IIS
       win_feature:
-        name: "Web-Server"
+        name: Web-Server,Web-Common-Http,NET-Framework-Core
         state: present
         restart: yes
         include_sub_features: yes
