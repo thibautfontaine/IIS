@@ -6,7 +6,7 @@
     - name: Install IIS
       win_feature:
         name: "Web-Server"
-        state: absent
-        restart: yes
+        state: present
         include_sub_features: yes
         include_management_tools: yes
+      win_reboot:
