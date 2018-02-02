@@ -13,13 +13,13 @@
       register: website
   - name: web2 
       win_iis_website:
-      name: "web2"
-      state: started
-      port: 80
-      ip: 10.56.1.22
-      hostname: 
-      physical_path: C:\WEB2
-      register: website
+        name: "web2"
+        state: started
+        port: 80
+        ip: 10.56.1.22
+        hostname: 
+        physical_path: C:\WEB2
+        register: website
 
 - name: Remove Default Web Site
   win_iis_website:
