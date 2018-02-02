@@ -5,7 +5,7 @@
   tasks:
     - name: Install IIS
       win_feature:
-        name: Web-Server,Web-Common-Http,NET-Framework-Core
+        name: Web-Server,Web-Common-Http
         state: present
         include_sub_features: yes
         include_management_tools: yes
