@@ -20,7 +20,7 @@
         hostname: 
         physical_path: C:\WEB2
         register: website
-  - name: Remove Default Web Site
+- name: Remove Default Web Site
   win_iis_website:
     name: "Default Web Site"
     state: present
