@@ -9,7 +9,7 @@
     physical_path: C:\inetpub\WEB1
     parameters: logfile.directory:c:\sites\logs
   register: website
-- name: web1 IIS site
+- name: web2 IIS site
   win_iis_website:
     name: "web2"
     state: started
