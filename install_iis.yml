@@ -9,4 +9,5 @@
         state: present
         include_sub_features: yes
         include_management_tools: yes
+      win_reboot:
         
