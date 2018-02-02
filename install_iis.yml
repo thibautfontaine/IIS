@@ -1,5 +1,12 @@
 ---
-- name: Install IIS (Web-Server only)
-  win_feature:
-    name: Web-Server
-    state: present
+- name: Install IIS
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Install IIS
+      win_feature:
+        name: "Web-Server"
+        state: absent
+        restart: yes
+        include_sub_features: yes
+        include_management_tools: yes
