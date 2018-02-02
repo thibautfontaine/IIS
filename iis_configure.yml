@@ -7,7 +7,6 @@
     ip: 10.56.1.12
     hostname: 
     physical_path: C:\inetpub\WEB1
-    parameters: logfile.directory:c:\sites\logs
   register: website
 - name: web2 IIS site
   win_iis_website:
@@ -17,10 +16,9 @@
     ip: 10.56.1.22
     hostname: 
     physical_path: C:\WEB2
-    parameters: logfile.directory:c:\sites\logs
   register: website
 
 - name: Remove Default Web Site
   win_iis_website:
     name: "Default Web Site"
-    state: absent
+    state: present
