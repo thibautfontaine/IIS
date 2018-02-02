@@ -20,6 +20,7 @@
     physical_path: C:\WEB2
     parameters: logfile.directory:c:\sites\logs
   register: website
+
 - name: Remove Default Web Site
   win_iis_website:
     name: "Default Web Site"
