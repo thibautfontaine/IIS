@@ -12,7 +12,7 @@
       physical_path: C:\inetpub\WEB1
       register: website
   - name: web2
-      win_iis_website:
+    win_iis_website:
         name: "web2"
         state: started
         port: 80
