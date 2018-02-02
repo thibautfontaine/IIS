@@ -1,5 +1,4 @@
----
-- name: 
+--- 
 - name: web1 IIS site
   win_iis_website:
     name: "web1"
