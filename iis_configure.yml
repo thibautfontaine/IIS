@@ -1,0 +1,26 @@
+---
+- name: 
+- name: web1 IIS site
+  win_iis_website:
+    name: "web1"
+    state: started
+    port: 80
+    ip: 10.56.1.12
+    hostname: 
+    physical_path: C:\inetpub\WEB1
+    parameters: logfile.directory:c:\sites\logs
+  register: website
+- name: web1 IIS site
+  win_iis_website:
+    name: "web2"
+    state: started
+    port: 80
+    ip: 10.56.1.22
+    hostname: 
+    physical_path: C:\WEB2
+    parameters: logfile.directory:c:\sites\logs
+  register: website
+- name: Remove Default Web Site
+  win_iis_website:
+    name: "Default Web Site"
+    state: absent
