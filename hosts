@@ -5,7 +5,7 @@ localhost ansible_connection=local
 winl ansible_host=10.56.1.12
 winl ansible_host=10.56.1.22
 [win:vars]
-ansible_user: Administrateur
-ansible_port: 5986
-ansible_connection: winrm
-ansible_winrm_server_cert_validation: ignore
+ansible_user=Administrateur
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
